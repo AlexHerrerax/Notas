@@ -11,6 +11,7 @@ const buscarHeroe = (id, callback) =>{
 
     const heroe = personajes[id]
 
+    //En caso de estar correcto
     if(heroe){
         callback(null, heroe)
     }else{
@@ -24,7 +25,7 @@ const buscarHeroe = (id, callback) =>{
 
 
 //Llamado de la funcion
-
+//Se recibe el error como primera parametro siempre
 buscarHeroe(heroeId, (error, heroe) =>{
     if(error){
         console.error(error)
