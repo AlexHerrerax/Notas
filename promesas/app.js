@@ -6,8 +6,11 @@ const personajes = {
 
 const heroeId = "capi";
 
+
+//Funcion de promesa
+
 const promesas = (id) => {
-    
+
   const heroe = personajes[id];
 
   return new Promise((resolve, reject) => {
@@ -19,6 +22,8 @@ const promesas = (id) => {
   });
 };
 
+
+//Llamado de la funcion
 promesas(heroeId).then((heroe)=>{
     console.log(`Enviando a ${heroe.nombre} a la mision`)
 })
