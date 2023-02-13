@@ -1,4 +1,4 @@
-**Promesas.**
+**Promesas**
 
 **Metodo then.**
 Al recibir una promesa, se suele guardar en una variable para luego trabajarla. En este caso, "Notification.requestPermission()" devuelve una promesa.
