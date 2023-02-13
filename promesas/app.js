@@ -7,12 +7,13 @@ const personajes = {
 const heroeId = "capi";
 
 
-//Funcion de promesa
+
 
 const promesas = (id) => {
 
   const heroe = personajes[id];
 
+  //Creacion de una promesa
   return new Promise((resolve, reject) => {
     if (heroe) {
       resolve(heroe);
